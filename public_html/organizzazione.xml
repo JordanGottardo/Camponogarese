@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="chisiamo.xslt"?>
+<organizzazione xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.camponogarese.it" xsi:schemaLocation="http://www.camponogarese.it organizzazione.xsd">
+	
+	<amministratori>
+	
+		<manager>
+			<nome>Daniel</nome>
+			<cognome>De Gaspari</cognome>
+			<dataNascita>27-08-1994</dataNascita>
+			<telefono>041414141</telefono>
+		</manager>
+	
+		<manager>
+			<nome>Riccardo</nome>
+			<cognome>Mao</cognome>
+			<dataNascita>01/01/1994</dataNascita>
+			<telefono>041-414141</telefono>
+		</manager>
+	
+		<manager>
+			<nome>Davide</nome>
+			<cognome>Santimaria</cognome>
+			<dataNascita>29/07/1989</dataNascita>
+			<telefono>3288297421</telefono>
+		</manager>
+	</amministratori>
+	
+	<dipendenti>
+	
+		<allenatori>
+			<nome>Riccardo</nome>
+			<cognome>Mao</cognome>
+			<dataNascita>01/01/1994</dataNascita>
+			<telefono>041-414141</telefono>
+		</allenatori>
+
+	</dipendenti>
+</organizzazione>
+<!-- Questo e' valido -->

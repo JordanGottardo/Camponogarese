@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns="http://www.camponogarese.it"
+    targetNamespace="http://www.camponogarese.it"
+    elementFormDefault="qualified">
+	
+	<xs:element name="calendarioPartite" type="TcalendarioPartite" />
+	
+	
+	<xs:complexType name="TcalendarioPartite">
+		<xs:sequence>
+			<xs:element name="piccoliAmici" type="Tcat" />
+			<xs:element name="esordienti" type="Tcat" />
+			<xs:element name="giovanissimi" type="Tcat" />
+		</xs:sequence>	
+	</xs:complexType>
+
+	<xs:complexType name="Tcat">
+		<xs:sequence minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="partita" type="Tpartita" />
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="Tpartita">	
+		<xs:sequence minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="squadraDiCasa" type="Tsquadra" />
+			<xs:element name="squadraInTrasferta" type="Tsquadra" />
+			<xs:element name="dataPartita" type="Tdata" />
+	<!--ho messo minOccurs=0 per dare all'admin la possibilità di "preparare l'evento" con il prossimo incontro,cioè intanto mettere la data e le squadre senza il risultato perchè l'incotro deve ancora disputarsi XD (da valutare se ha senso) -->
+			<xs:element name="goalSquadCasa" type="Tgoal" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="goalSquadTrasf" type="Tgoal" minOccurs="0" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- Restrinzione per il nome delle squadre devono iniziare con una lettere maiuscola e poi una o più lettere minuscole; può essere composta da due parti -->
+			
+	<xs:simpleType name="Tsquadra" >
+    	<xs:restriction base="xs:string">
+    		<xs:pattern value="([A-Z][a-z]+( ([A-Z][a-z]+))?)" />
+   		</xs:restriction>
+   	</xs:simpleType>
+	
+	
+	<!-- tipo data semplice con restrizione in forma compatta,purtroppo permettee l'inserimento di date inesistenti,ma fornisce cmq un piccolo vincolo-->
+	<xs:simpleType name="Tdata">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[0-3]{1}[0-9]{1}/[0,1]{1}[0-9]{1}/[0-9]{4}" />
+		</xs:restriction>
+	</xs:simpleType>	
+		
+	
+	<!-- Tipo che fefinisce il numero dei goal-->
+	<xs:simpleType name="Tgoal">
+		<xs:restriction base="xs:integer">
+			<xs:pattern value="[0-9]{1,2}" /><!-- più di 99 goal è difficile farli in 90 minuti :P -->
+		</xs:restriction>
+	</xs:simpleType> 
+		
+</xs:schema>

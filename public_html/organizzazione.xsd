@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns="http://www.camponogarese.it"
+    targetNamespace="http://www.camponogarese.it"
+    elementFormDefault="qualified">
+	
+	<xs:element name="organizzazione" type="Torganizzazione" />
+	
+	
+	<xs:complexType name="Torganizzazione">
+		<xs:sequence>
+			<xs:element name="amministratori" type="Tamministratori" />
+			<xs:element name="dipendenti" type="Tdipendenti" />
+		</xs:sequence>
+	</xs:complexType>
+	
+	<!-- amministratori prima di manager per dare la possibilità di aggiungere altre figure all'interno dell'organizzazione -->
+	<xs:complexType name="Tamministratori" >
+		<xs:sequence>
+			<xs:element name="manager" type="Tdati" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+	
+	<!-- si chiama Tdati perchè riuso il tipo anche per i dipendenti-->
+	<xs:complexType name="Tdati" >
+		<xs:sequence>
+			<xs:element name="nome" type="Tnome" />
+			<xs:element name="cognome" type="Tcognome" />
+			<xs:element name="dataNascita" type="Tdata" />
+			<xs:element name="telefono" type="Ttelefono" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- Restrinzione per il nome deve iniziare con una lettere maiuscola e poi una o più lettere minuscole -->		
+	<xs:simpleType name="Tnome" >
+    	<xs:restriction base="xs:string">
+    		<xs:pattern value="([A-Z][a-z]+)"/>
+   		</xs:restriction>
+   	</xs:simpleType>
+
+	<!-- Restrinzione per il cognome deve iniziare con una lettere maiuscola e poi una o più lettere minuscole, inoltre può essere un cognome composto da due parti (es: De Franceschi) -->	
+	<xs:simpleType name="Tcognome">
+    	<xs:restriction base="xs:string">
+    		<xs:pattern value="([A-Z][a-z]+( ([A-Z][a-z]+))?)" />
+   		</xs:restriction>
+   	</xs:simpleType>			
+    
+	<!-- Scelto tipo semplice con restrizione per semplicità di implementazione (aggiunta date tramite form/gestione con perl), formato DD/MM/YYYY ma permette cose come 32/15/2015 -->
+	<xs:simpleType name="Tdata">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="([0-3]{1}[0-9]{1}\/[0,1]{1}[0-9]{1}\/[0-9]{4})|([0-3]{1}[0-9]{1}\-[0,1]{1}[0-9]{1}\-[0-9]{4})" />
+		</xs:restriction>
+	</xs:simpleType>
+	
+
+
+	
+	<!-- Tipo che definisce sia numeri di telefonia fissa, sia numeri di telefono cellulare (evitando il prefisso nazionale 0039 iniziale); entrambi defiti secondo la forma: prefisso - numero -->
+	<xs:simpleType name="Ttelefono">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="(0?[0-9]{2,3}\-[0-9]+)|(0?[0-9]{2,3}[0-9]+)" />
+		</xs:restriction>
+	</xs:simpleType> 
+	
+	
+	<!-- Tipo complesso Tdipendenti -->
+	<xs:complexType name="Tdipendenti">
+		<xs:sequence>
+			<xs:element name="allenatori" type="Tdati" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+	
+</xs:schema>

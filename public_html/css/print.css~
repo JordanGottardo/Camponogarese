@@ -1,0 +1,172 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body, html{
+	margin: auto;
+	font-size:100%;
+	font-family: Verdana, Helvetica, sans-serif;
+}
+a:link:after, a:visited:after {
+	content: attr(href) " ";
+	font-size:90%;
+}
+a.nascosto{
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+a:focus.nascosto 
+{ 
+position: static; 
+width: auto; 
+height: auto; 
+} 
+#login {
+	display: none;
+}
+#logo{
+	display: none;
+}
+#path {
+    display: none;
+}
+#menu{
+	display: none;
+}
+#section{
+	margin: 20px;
+	background-color: white;
+}
+input{
+	display: none;
+}
+.casella_input{
+  display: none;
+}
+#footer{
+	display: none;	 
+}
+#tabellaOrari {
+	width: 100%;
+	table-layout: fixed; 
+	padding: 10px;
+	text-align:center;
+}
+
+#tabellaOrari th{
+	border: 1px solid black;
+}
+#tabellaOrari th, td {
+	border: 1px solid black;
+}
+#news {
+	margin-top: 10px;
+}
+#news ul {
+	list-style-type: none;
+}
+#news ul > li {
+	padding:10px;;
+}
+#section p {
+	padding-bottom:10px;
+}
+.linkAncore{
+	display: block;
+	font-size: 100%;
+	padding: 1%;
+	border: 3px solid black;
+}
+.linkAncore ul{
+	display: inline-block;
+	list-style: none;
+}
+.linkAncore li{   
+	float: left;
+}
+.linkAncore li a{
+	display: block;
+	background-color: #99FF99;
+	padding: 5px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px;
+	border-bottom: 1px solid black;
+}
+.linkAncore li a:hover:not(.active){
+	color: black;
+}
+li > a.active{
+	border-bottom: 1px solid black;
+}
+.listaEventi{
+	margin: 0.5em 0em 0.5em;
+	border: 3px solid black;
+	padding: 0.5em 0em 0.5em ;
+	height: auto;
+	width: auto;
+	display: block;
+}
+a.evento{
+	display: block;
+	height: 2em;
+	width: auto;
+	margin: 1em;
+	padding: 1em 0em 1em;
+    border: 1px solid black;
+	text-align: center;
+}
+a:hover.evento {
+	background-image: url(../immagini/pallone.jpg);
+	background-size: contain;
+    background-repeat: no-repeat;
+	background-color: white;
+ 	border: 1px solid black;
+}
+#jsDisabilitato{
+	display: block;
+}
+#jsAbilitato{
+	display:none;
+}
+#big_img img {   
+    width: 37em;
+    height: 28em;
+    margin: 1em 2em 0em 2em;
+}
+.listaFoto{ 
+    width: 100px;
+}
+.listaFoto img{
+    width: 50px;
+    height: 30px;
+    border: 1px solid black;
+}
+.immev {
+	width: 80px;
+	height: 45px;
+}
+#frameMappa {
+	width: 100%;
+	height: 20em;
+}
+.print {
+	display: none;
+}
+#tabellapartite{
+	margin: 5px;
+	margin-left: auto;
+  	margin-right: auto;
+	text-align: center;
+	table-layout: fixed;
+}
+#tabellapartite th{
+	padding: 10px;
+}
+#tabellapartite td {
+	border: 1px solid black;
+}

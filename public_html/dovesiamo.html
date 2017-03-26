@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+<head>
+	<title>Dove siamo - Squadra Calcio Camponogarese</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="type" />
+	<meta name="title" content="Dove siamo - Camponogarese Associazione calcistica dilettantistica" />
+	<meta name="description" content="Indicazioni per raggiungere la sede dell'associazione sportiva Camponogarese" />
+	<meta name="keywords" content="Camponogarese, associazione, sport, calcio, squadra, piccoli amici camponogara, esordienti camponogara, giovanissimi camponogara, dove siamo" />
+	<meta name="language" content="italian it" />
+	<meta name="author" content="Daniel De Gaspari, Davide Santimaria, Emanuele Carraro, Jordan Gottardo" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen and (min-width: 650px)" />
+	<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+	<link rel="stylesheet" type="text/css" href="css/small-devices.css" media="screen and (max-width: 650px)" />
+	<link rel="icon" href="immagini/logo.png" type="image/png" />
+	<script type="text/javascript" src="script/script.js"></script>
+</head>
+
+<body onload="replaceMap()">
+	<div id="header">
+		
+		<span id="logo"></span>
+
+		<!-- link "nascosto" che porta direttamente al contenuto della pagina -->
+			<a href="#contenutopagina" class="nascosto">Vai al contenuto della pagina</a>
+
+		<h1><abbr title="Associazione calcistica dilettantistica">A.C.D.</abbr> Camponogarese</h1>
+	</div>
+
+	<div id="path">
+		<p>Ti trovi in: <a href="index.html" xml:lang="en">Home</a> &gt;&gt; Dove Siamo</p>
+	</div>
+
+	<!-- menu laterale sotto al logo, orientamento verticale -->
+	<div id="menu">
+	<!-- link "nascosto" del menù -->
+		<a name="menuNascosto" class="nascosto">Menù</a>
+		<ul>
+			<li><a href="index.html"><span xml:lang="en">Home</span></a></li>
+			<li><a href="organizzazione.xml">Chi siamo</a></li>
+			<li><a href="squadre.html">Squadre</a></li>
+			<li><a href="orario.html">Orari</a></li>
+			<li><a href="calendarioPartite.xml">Risultati partite</a></li>
+			<li><a href="photogallery.html"> <span xml:lang="en">Photo Gallery </span></a></li>
+			<li id="CurrentLink">Dove siamo</li>
+
+		</ul>
+	</div>
+
+	<div id="section">
+		<a name="contenutopagina"></a>
+		<h1 class="titolo">Dove siamo</h1>
+			<div id="info">
+				<p><strong>Indirizzo</strong>: Via Parolini, 11 30010 Camponogara VE</p>
+				<p><strong>Telefono</strong>: 041 462804 </p>
+				<!-- Inserire indirizzo email, href con "mailto:..." -->
+				<p><strong>E-mail</strong>: <a href="">camponogarese@gmail.com</a></p>
+			</div>
+
+			<!-- in javascript, aggiungere funzione onload per rimpiazzare la mappa-->
+			<div id="divMappa">
+				<p>Consulta la seguente mappa:</p>
+				<div id="visualizzaMappa">
+					<a href="https://www.google.it/maps/place/Via+Parolini,+11,+30010+Camponogara+VE/@45.384382,12.075781,17z/data=!4m2!3m1!1s0x477ec7ace369e9db:0xfe2a4c9605f9ae2b"><img id="fotoMappa" src="immagini/mappa.png" alt="Mappa della posizione del campo" width="100%" height="100%"/></a>
+				</div>
+			</div>
+	<!-- Link nascosto che porta al menù -->			
+		<a href="#menuNascosto" class="nascosto">Torna al menu</a>		
+	</div>
+
+	<div id="footer">
+		<img class="imgValidCode" src="immagini/valid-xhtml10.png" alt="XHTML valido" /><img class="imgValidCode" 
+		src="immagini/vcss.gif" alt="CSS valido" /><img class="imgValidCode" src="immagini/valid_wcag_aaa.gif" alt="WCAG valido" />
+	</div>
+</body>
+</html>

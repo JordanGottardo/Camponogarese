@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="calendarioPartite.xslt"?>
+<calendarioPartite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.camponogarese.it" xsi:schemaLocation="http://www.camponogarese.it calendarioPartite.xsd">
+	
+	<piccoliAmici>
+
+		<!-- 1° partita campionato -->
+		<partita>
+			<squadraDiCasa>Camponogarese</squadraDiCasa>
+			<squadraInTrasferta>Clodiense</squadraInTrasferta>
+			<dataPartita>06/09/2015</dataPartita>
+			<goalSquadCasa>2</goalSquadCasa>
+			<goalSquadTrasf>1</goalSquadTrasf>
+		</partita>
+	
+			<!-- 2° partita campionato -->
+		<partita>
+			<squadraDiCasa>Solesinese</squadraDiCasa>
+			<squadraInTrasferta>Camponogarese</squadraInTrasferta>
+			<dataPartita>13/09/2015</dataPartita>
+			<goalSquadCasa>0</goalSquadCasa>
+			<goalSquadTrasf>0</goalSquadTrasf>
+		</partita>
+
+				<!-- 3° partita campionato -->
+		<partita>
+			<squadraDiCasa>Camponogarese</squadraDiCasa>
+			<squadraInTrasferta>Bussolengo</squadraInTrasferta>
+			<dataPartita>20/09/2015</dataPartita>
+			<goalSquadCasa>0</goalSquadCasa>
+			<goalSquadTrasf>1</goalSquadTrasf>
+		</partita>
+				<!-- 4° partita campionato -->
+		<partita>
+			<squadraDiCasa>Camponogarese</squadraDiCasa>
+			<squadraInTrasferta>Thermal Teolo</squadraInTrasferta>
+			<dataPartita>27/09/2015</dataPartita>
+			<goalSquadCasa>3</goalSquadCasa>
+			<goalSquadTrasf>0</goalSquadTrasf>
+		</partita>
+
+		</piccoliAmici>
+
+	<esordienti>
+		<!-- 1° partita campionato -->
+		<partita>
+			<squadraDiCasa>Camponogarese</squadraDiCasa>
+			<squadraInTrasferta>Clodiense</squadraInTrasferta>
+			<dataPartita>05/09/2015</dataPartita>
+			<goalSquadCasa>1</goalSquadCasa>
+			<goalSquadTrasf>1</goalSquadTrasf>
+		</partita>	
+
+		<!-- 2° partita campionato -->
+		<partita>
+			<squadraDiCasa>Solesinese</squadraDiCasa>
+			<squadraInTrasferta>Camponogarese</squadraInTrasferta>
+			<dataPartita>12/09/2015</dataPartita>
+			<goalSquadCasa>0</goalSquadCasa>
+			<goalSquadTrasf>2</goalSquadTrasf>
+		</partita>
+	
+			
+		<!-- 3° partita campionato -->
+		<partita>
+			<squadraDiCasa>Camponogarese</squadraDiCasa>
+			<squadraInTrasferta>Bussolengo</squadraInTrasferta>
+			<dataPartita>19/09/2015</dataPartita>
+			<goalSquadCasa>3</goalSquadCasa>
+			<goalSquadTrasf>1</goalSquadTrasf>
+		</partita>
+
+		<!-- 4° partita campionato -->
+		<partita>
+			<squadraDiCasa>Camponogarese</squadraDiCasa>
+			<squadraInTrasferta>Thermal Teolo</squadraInTrasferta>
+			<dataPartita>26/09/2015</dataPartita>
+			<goalSquadCasa>0</goalSquadCasa>
+			<goalSquadTrasf>1</goalSquadTrasf>
+		</partita>
+
+		</esordienti>
+	 
+	 <giovanissimi>
+
+		<!-- 1° partita campionato -->
+		<partita>
+			<squadraDiCasa>Camponogarese</squadraDiCasa>
+			<squadraInTrasferta>Clodiense</squadraInTrasferta>
+			<dataPartita>06/09/2015</dataPartita>
+			<goalSquadCasa>2</goalSquadCasa>
+			<goalSquadTrasf>2</goalSquadTrasf>
+		</partita>
+
+
+		<!-- 2° partita campionato -->
+		<partita>
+			<squadraDiCasa>Solesinese</squadraDiCasa>
+			<squadraInTrasferta>Camponogarese</squadraInTrasferta>
+			<dataPartita>13/09/2015</dataPartita>
+			<goalSquadCasa>1</goalSquadCasa>
+			<goalSquadTrasf>0</goalSquadTrasf>
+		</partita>
+
+
+		<!-- 3° partita campionato -->
+		<partita>
+			<squadraDiCasa>Camponogarese</squadraDiCasa>
+			<squadraInTrasferta>Bussolengo</squadraInTrasferta>
+			<dataPartita>20/09/2015</dataPartita>
+			<goalSquadCasa>4</goalSquadCasa>
+			<goalSquadTrasf>1</goalSquadTrasf>
+		</partita>
+
+	 	
+	 			<!-- 4° partita campionato -->
+		<partita>
+			<squadraDiCasa>Camponogarese</squadraDiCasa>
+			<squadraInTrasferta>Thermal Teolo</squadraInTrasferta>
+			<dataPartita>27/09/2015</dataPartita>
+			<goalSquadCasa>2</goalSquadCasa>
+			<goalSquadTrasf>0</goalSquadTrasf>
+		</partita>
+
+	 </giovanissimi>
+</calendarioPartite>

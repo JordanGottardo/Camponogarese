@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+<head>
+	<title>Evento prototipo - Squadra Calcio Camponogarese</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="type" />
+	<meta name="title" content="Foto evento - Associazione calcistica dilettantistica Camponogarese" />
+	<meta name="description" content="Foto eventoPrototipo del sito A.C.D. Camponogarese" />
+	<meta name="keywords" content="Camponogarese, associazione, sport, calcio, squadra, partita, piccoli amici camponogara, esordienti camponogara, giovanissimi camponogara , foto, evento" />
+	<meta name="language" content="italian it" />
+	<meta name="author" content="Daniel De Gaspari, Davide Santimaria, Emanuele Carraro, Jordan Gottardo" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen and (min-width: 650px)" />
+	<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+	<link rel="stylesheet" type="text/css" href="css/small-devices.css" media="screen and (max-width: 650px)" />
+	<link rel="icon" href="immagini/logo.png" type="image/png" />
+	<script type="text/javascript" src="script/script.js"></script>
+</head>
+
+<body onload="controlloJava(); gallery();">
+	<div id="header">
+		
+		<span id="logo"></span>
+		<!-- link "nascosto" che porta direttamente al contenuto della pagina -->
+		<a href="#contenutopagina" class="nascosto">Vai al contenuto della pagina</a>
+
+		<h1><abbr title="Associazione calcistica dilettantistica">A.C.D.</abbr> Camponogarese</h1>
+	</div>
+
+	<div id="path">
+		<p>Ti trovi in: <a href="index.html" xml:lang="en">Home</a> &gt;&gt; 
+		<a href="photogallery.html" xml:lang="en">Photo gallery</a> &gt;&gt; EventoPrototipo </p>
+	</div>
+
+	<!-- menu "rapido" di fianco al logo, orientamento orizzontale -->
+	<!-- modificato in casella di ricerca -->
+
+	<!-- menu laterale sotto al logo, orientamento verticale -->
+	<div id="menu">
+	<!-- link "nascosto" del menù -->
+		<a name="menuNascosto" class="nascosto">Menù</a>
+
+		<ul>
+			<!-- Controllare se ci va lo span... -->
+			<li><a href="index.html"><span xml:lang="en">Home</span></a></li>
+			<li><a href="organizzazione.xml">Chi siamo</a></li>
+			<li><a href="squadre.html">Squadre</a></li>
+			<li><a href="orario.html">Orari</a></li>
+			<li><a href="calendarioPartite.xml">Risultati partite</a></li>
+			<li><a href="photogallery.html"><span xml:lang="en">Photo Gallery</span></a></li>
+			<li><a href="dovesiamo.html">Dove siamo</a></li>
+
+		</ul>
+	</div>
+
+	<div id="section">
+		<div id="jsDisabilitato">
+			<a name="contenutopagina">
+				<img class="immev" src="immagini/foto-1.jpg" alt="Squadra Esordienti Camponogarese"></img>
+			</a>
+			
+			<img class="immev" src="immagini/foto-2.jpg" alt="Partita dei Pulcini Camponogarese"></img>
+			<img class="immev" src="immagini/foto-3.jpg" alt="Allenamento Pulcini Camponogarese"></img>
+			<img class="immev" src="immagini/foto-4.jpg" alt="Squadra Pulcini Camponogarese"></img>
+			<img class="immev" src="immagini/foto-5.jpg" alt="Allenamento Giovanissimi Camponogarese"></img>
+			<img class="immev" src="immagini/foto-6.jpg" alt="Allenamento Giovanissimi Camponogarese"></img>
+			<img class="immev" src="immagini/foto-7.jpg" alt="Azione difensiva del Camponogarese"></img>
+		</div>
+		<!-- Con javascript abilitato-->
+		<div id="jsAbilitato" >
+			<div class="wrapper">
+
+			 <!-- Immagini selezionata ingrandita-->	
+				<div id="big_img">
+	          		<a name="bigImg"><img src="immagini/foto-1.jpg" id="myPicture" alt="Foto dove i due giocatori si driblano"/></a>
+	       		</div>
+	       		
+	<!-- Lista delle immagini rimpiccilite-->			
+		       <div class="listaFoto">
+		          <a href="#bigImg">
+		          	<img src="immagini/foto-1.jpg"   id="foto-1" alt="Squadra Esordienti Camponogarese"/>
+		          </a>
+
+		          <a href="#bigImg">
+		          	<img src="immagini/foto-2.jpg"   id="foto-2" alt="Partita dei Pulcini Camponogarese"/>
+		          </a>
+
+		          <a href="#bigImg">
+		          	<img src="immagini/foto-3.jpg"   id="foto-3" alt="Allenamento Pulcini Camponogarese"/>
+		          </a>
+
+		          <a href="#bigImg">
+		          	<img src="immagini/foto-4.jpg"   id="foto-4" alt="Squadra Pulcini Camponogarese"/>
+		          </a>
+
+		          <a href="#bigImg">
+		          	<img src="immagini/foto-5.jpg"   id="foto-5" alt="Allenamento Giovanissimi Camponogarese"/>
+		          </a>
+
+		          <a href="#bigImg">
+		          	<img src="immagini/foto-6.jpg"   id="foto-6"   alt="Allenamento Giovanissimi Camponogarese"/>
+		          </a>
+
+		          <a href="#bigImg">
+		          <img src="immagini/foto-7.jpg"  id="foto-7" alt="Foto di un'azione difensiva del Camponogarese"/> </a> 
+		         </div>
+
+		       
+	    	</div>
+	    </div>
+	</div>
+	<!-- Link nascosto che porta al menù -->
+		<p><a href="#menuNascosto" class="nascosto">Torna al menu</a></p>
+	<div id="footer">
+		<img class="imgValidCode" src="immagini/valid-xhtml10.png" alt="XHTML valido" /><img class="imgValidCode" 
+		src="immagini/vcss.gif" alt="CSS valido" /><img class="imgValidCode" src="immagini/valid_wcag_aaa.gif" alt="WCAG valido" />
+	</div>
+</body>
+</html>
